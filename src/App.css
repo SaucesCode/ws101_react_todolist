@@ -1,0 +1,36 @@
+:root {
+  --white-green: #f6fbf4;
+  --light-green: #e8dfca;
+  --gray-green: #54b435;
+  --green: #379237;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 150px auto;
+}
+
+.app-main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task-column {
+  width: 33.33%;
+  margin: 20px;
+}
+
+@media (max-width: 610px) {
+  .task-column {
+    width: 100%;
+  }
+
+  .app-header > form {
+    width: 100%;
+  }
+
+  .app-main {
+    flex-direction: column;
+  }
+}
